@@ -13,37 +13,92 @@
   <title>Chowdeck</title>
 </head>
 <body>
-  <nav class="flex items-center justify-between">
+  <nav class="bg-white border-b border-gray-200 fixed left-0 right-0 top-0">
 
-    <div class="flex items-center">
+    <div class="flex items-center justify-between container mx-auto py-5">
+      <div class="flex items-center gap-5">
 
-      <img src="https://chowdeck.com/store/_next/image?url=%2Fstore%2FLogo.png&w=640&q=75" alt="" class="w-10">
+        <img src="https://chowdeck.com/store/_next/image?url=%2Fstore%2FLogo.png&w=640&q=75" alt="" class="w-10 rounded-sm">
 
-      <div class="flex items-center">
-        <i class="bx bx-location"></i>
-        
-        <div class="flex items-center">
-          <span>Jos North</span>
-          <i class="bx bx-chevron-down"></i>
+        <div class="flex items-center gap-2.5">
+          <i class="bxf bx-location text-[#60e1a8]"></i>
+
+          <div class="flex items-center text-gray-700">
+            <span class="text-xs">Jos North</span>
+            <i class="bx bx-chevron-down"></i>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="flex items-center">
+      <div class="flex items-center gap-5">
 
-      <div class="flex items-center">
-        <i class="bx bx-search"></i>
-        <input type="text" autofocus placeholder="Search Chowdeck">
-      </div>
+        <div class="flex items-center relative">
+          <i class="bx bx-search absolute left-2"></i>
+          <input type="text" placeholder="Search Chowdeck..." class="bg-gray-100 placeholder:text-xs text-gray-700 pl-7 py-1.5 w-80 rounded-sm outline-[#00553d]">
+        </div>
 
-      <div class="flex items-center">
-        <i class="bx bx-cart"></i>
-        <i class="bx bx-user"></i>
+        <div class="flex items-center gap-2.5">
+          <i class="bx bx-cart bg-[#00553d] p-2.5 rounded-full text-xl text-gray-100"></i>
+          <i class="bx bx-user bg-[#00553d] p-2.5 rounded-full text-xl text-gray-100"></i>
+        </div>
       </div>
     </div>
   </nav>
 
-  <main></main>
+  <main>
+    <!-- CATEGORIES SECTION -->
+     <section>
+      <div class="container mx-auto mt-28 flex items-center justify-between px-5">
+        <span class="text-2xl">Explore Categories</span>
+        <div class="flex items-center gap-2.5 text-gray-100 font-light bg-[#00553d] py-1.5 px-2.5 rounded-3xl">
+          <span>Filter</span>
+          <i class="bx bx-slider"></i>
+        </div>
+      </div>
+
+      <!-- CARDS SECTION -->
+       <div class="flex items-center container mx-auto pl-5 gap-6">
+          <div class="flex flex-col items-center justify-center bg-[#ffe7f2] w-[120px] h-[120px] gap-5 rounded-lg border border-red-300 border-solid mt-5">
+            <img src="https://chowdeck.com/store/_next/image?url=%2Fstore%2Frestaurants.png&w=48&q=75" alt="" class="w-10">
+            <span class="text-sm font-light">Restaurants</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center bg-[#fdfbe1] w-[120px] h-[120px] gap-5 rounded-lg mt-5">
+            <img src="https://chowdeck.com/store/_next/image?url=%2Fstore%2Fshops.png&w=48&q=75" alt="" class="w-10">
+            <span class="text-sm font-light">Shops</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center bg-[#ecf2ff] w-[120px] h-[120px] gap-5 rounded-lg mt-5">
+            <img src="https://chowdeck.com/store/pharmacy.svg" alt="" class="w-10">
+            <span class="text-sm font-light">Pharmacy</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center bg-[#e4fbf1] w-[120px] h-[120px] gap-5 rounded-lg mt-5">
+            <img src="https://chowdeck.com/store/_next/image?url=%2Fstore%2Flocal-market.png&w=48&q=75" alt="" class="w-10">
+            <span class="text-sm font-light">Local Markets</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center bg-[#fff3ec] w-[120px] h-[120px] gap-5 rounded-lg mt-5">
+            <img src="https://chowdeck.com/store/_next/image?url=%2Fstore%2Fafrican.png&w=48&q=75" alt="" class="w-10">
+            <span class="text-sm font-light">African Meals</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#e4fbf1] w-[120px] gap-5 py-6 rounded-lg mt-5">
+            <img src="https://chowdeck.com/store/fit-fam.svg" alt="" class="w-10">
+            <span class="text-sm font-light">Healthy</span>
+          </div>
+
+          <div class="flex flex-col items-center justify-center bg-[#fdfbe1] w-[120px] h-[120px] gap-5 rounded-lg mt-5">
+            <img src="https://chowdeck.com/store/_next/image?url=%2Fstore%2Fdrinks.png&w=48&q=75" alt="" class="w-10">
+            <span class="text-sm font-light">Drinks</span>
+          </div>
+
+          
+       </div>
+
+
+     </section>
+  </main>
 
   <footer></footer>
 </body>
